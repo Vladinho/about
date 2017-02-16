@@ -1,0 +1,52 @@
+mixin skills()
+	+section("Расскажите о себе чекбоксами")&attributes(attributes).skills
+		+e('p').text
+			| Отметьте чекбоксами пункты, которые соответствуют вашим скиллам. Кстати, отсутствие
+			| опыта не означает, что у вас меньше шансов стать одним из наших товарищей. Это
+			| означает, что вы будете получать те задачи, с которыми гарантировано будете
+			| справляться.
+
+		.skills__items
+			+checkbox.skills__item(checked) БЭМ/OOCSS
+
+			+checkbox.skills__item(checked) Pug (Jade)
+
+			+checkbox.skills__item(checked) Stylus/LESS/SASS
+
+			+checkbox.skills__item Работаю с SVG
+
+			+checkbox.skills__item(checked) Верстаю семантично
+
+			+checkbox.skills__item Accessibility(A11Y)
+
+			+checkbox.skills__item ES2015/ES2016
+
+			+checkbox.skills__item(checked) Gulp/GRUNT
+
+			+checkbox.skills__item Webpack
+
+			+checkbox.skills__item Дружу с WebGL
+
+			+checkbox.skills__item(checked) jQuery
+
+			+checkbox.skills__item(checked) Знаю/изучаю Angular
+
+			+checkbox.skills__item Знаю/изучаю React
+
+			+checkbox.skills__item Знаю/изучаю Node.js
+
+			+checkbox.skills__item(checked) Использую Git
+
+			+checkbox.skills__item(checked) С глазомером всё ок
+
+			+checkbox.skills__item
+				| Читаю
+				= " "
+				a(href="blog.csssr.ru") blog.csssr.ru
+
+			+checkbox.skills__item(checked) Я ленивый(-ая)
+
+			+checkbox.skills__item
+				| У меня хороший
+				br
+				| английский

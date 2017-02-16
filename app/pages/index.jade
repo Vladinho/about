@@ -1,0 +1,29 @@
+extends /blocks/layout-default/layout-default
+
+block head
+	- var pageTitle = 'Репкин Владислав';
+
+block content
+	+header
+
+	main
+		+e('section').title
+			+e.title-img
+
+		+e('section').form
+			+row('Полное ФИО'): +input("Репкин Владислав Евгеньевич").row__input
+			+row('Год рождения'): +input("1990").row__input
+			+row('Место жительства').row_label_shift: +input("г. Новокузнецк").row__input
+			+row('Скайп'): +input("Vladinho901").row__input
+			+row('Почта').row_label_shift: +input("vladislav.repkin@gmail.com").row__input
+
+		+skills
+
+		+slider
+
+		+about
+
+		+future
+
+		+e('section').date
+			+row('Дата заполнения')._inline: +input("17.02.2017")

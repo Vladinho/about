@@ -1,0 +1,34 @@
+.slider
+    margin-top: 41px;
+    padding-left: 4px;
+    padding-right: 4px;
+    &__scale
+        margin-top: 37px;
+        sprite($scale)
+        position: relative
+        .controller
+            position: absolute
+            sprite($controller)
+            margin-top: -15px
+            left: 365px
+    &__checkpoints
+        margin-top: 4px;
+        &:after
+            display: table;
+            clear: both;
+            content: '';
+    &__label
+        display: inline-block;
+        font-family: PTSansBold, sans-serif;
+        font-size: 13px;
+        line-height: 18px;
+        vertical-align: top;
+        &_mr_78
+            margin-right: 78px;
+        &_mr_56
+            margin-right: 56px;
+        &_float_r
+            float: right;
+        &_last
+            margin-top: 6px;
+            margin-right: 4px;

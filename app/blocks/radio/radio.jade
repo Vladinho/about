@@ -1,0 +1,6 @@
+mixin radio()
+	+b('label').radio(class= attributes.class)
+		- delete attributes.class
+		+e('input').input(type="radio")&attributes(attributes)
+		+e('span').label
+			block

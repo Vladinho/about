@@ -1,0 +1,5 @@
+mixin row(label)
+	+b('label').row&attributes(attributes)
+		+e.label= label
+		+e.value
+			block

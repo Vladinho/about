@@ -1,0 +1,45 @@
+.checkbox
+	display inline-block
+	cursor pointer
+
+	&__input
+		position absolute
+		z-index -1
+		opacity 0
+
+		&:checked + .checkbox__label
+
+			&:after
+				opacity 1
+
+	&__label
+		position relative
+		padding-left 28px
+		display inline-block
+		min-height 18px
+		font-family PTSansBold
+		font-size 21px
+		line-height 18px
+
+
+		&:before
+			position absolute
+			top 0
+			left 0
+			content ''
+			sprite($check_box_off)
+
+		&:after
+			position absolute
+			top 0
+			left 4px
+			content ''
+			opacity 0
+			transform rotate(-45deg)
+			transition opacity .3s ease
+			size(14px, 6px)
+			border-left 3px solid alpha(#231f20, .8)
+			border-bottom 3px solid alpha(#231f20, .8)
+
+		&:empty
+			padding-left 18px

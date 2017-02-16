@@ -1,0 +1,24 @@
+include /../node_modules/bemto.jade/bemto
+include /../node_modules/jade-injected/jade-injected
+include ../page/page
+include ../header/header
+include ../row/row
+include ../input/input
+include ../section/section
+include ../skills/skills
+include ../about/about
+include ../slider/slider
+include ../future/future
+include ../checkbox/checkbox
+include ../radio/radio
+include ../scripts/scripts
+
+doctype html
+html(lang='ru')
+	include ../head/head
+	+page
+		block content
+
+		+scripts(['app.min.js'])
+
+

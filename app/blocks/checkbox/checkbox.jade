@@ -1,0 +1,6 @@
+mixin checkbox()
+	+b('label').checkbox(class= attributes.class)
+		- delete attributes.class
+		+e('input').input(type="checkbox")&attributes(attributes)
+		+e('span').label
+			block
